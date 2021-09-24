@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlumnoActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
 
     <TextView
         android:id="@+id/idTitlePage"
@@ -18,5 +20,60 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/id_alumno_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Nombre"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/id_alumno_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese apellido"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/id_alumno_dni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Dni"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/id_alumno_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Ingrese celular"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/id_alumno_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Ingrese email"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        />
+
+     <Button
+         android:id="@+id/id_alumno_registrar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Registrar"
+         android:padding="10dp"
+         android:layout_margin="5dp"
+         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
